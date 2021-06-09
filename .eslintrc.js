@@ -7,7 +7,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
-    "prettier/prettier"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -25,13 +25,7 @@ module.exports = {
     "react-hooks"
   ],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {},
-      {
-        "usePrettierrc": true
-      }
-    ],
+    "prettier/prettier": ["error"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [
@@ -56,7 +50,11 @@ module.exports = {
     "react/no-array-index-key": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "import/no-extraneous-dependencies": ["error", {"peerDependencies": true}],
-    "better-styled-components/sort-declarations-alphabetically": 2
+    "better-styled-components/sort-declarations-alphabetically": 2,
+    "implicit-arrow-linebreak": "off",
+    "arrow-parens": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
     // "@typescript-eslint/explicit-function-return-type": "off",
     // "@typescript-eslint/explicit-member-accessibility": "off",
     // "jsx-a11y/anchor-is-valid": "off",
@@ -66,7 +64,6 @@ module.exports = {
     // "no-else-return": "off",
     // "react/destructuring-assignment": "off",
     // "react/jsx-filename-extension": 0,
-    // "react/jsx-props-no-spreading": "off",
     // "react/prop-types": "off",
     // "react/require-default-props": "off",
     // "space-before-function-paren": "off",

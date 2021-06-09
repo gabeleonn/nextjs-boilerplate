@@ -86,11 +86,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const customMediaQuery = (maxWidth: number) =>
-  `@media (max-width: ${maxWidth}px)`;
+const customMediaQuery = (maxWidth: number) => {
+  return `@media (max-width: ${maxWidth}px)`;
+};
 
-const customHeightMediaQuery = (minHeight: number) =>
-  `@media (height: ${minHeight}px)`;
+const customHeightMediaQuery = (minHeight: number) => {
+  return `@media (height: ${minHeight}px)`;
+};
 
 export const media = {
   bigDesktop: customMediaQuery(2560),
