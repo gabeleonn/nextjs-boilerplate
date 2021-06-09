@@ -1,8 +1,8 @@
 import { ServerStyleSheet } from 'styled-components';
-import { DocumentInitialProps } from 'next/dist/next-server/lib/utils';
 
 import Document, {
   DocumentContext,
+  DocumentInitialProps,
   Html,
   Head,
   Main,
@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
     }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang="pt-br">
         <Head />

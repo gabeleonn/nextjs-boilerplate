@@ -1,1 +1,3 @@
-export interface Testing {}
+export interface Testing {
+  test: string;
+}
