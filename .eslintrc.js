@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env": {
     "browser": true,
     "es2021": true
@@ -7,7 +7,7 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "prettier/prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -99,6 +99,14 @@
           [
             "@/styles",
             "./src/styles"
+          ],
+          [
+            "@/interfaces",
+            "./src/types/interfaces"
+          ],
+          [
+            "@/enums",
+            "./src/types/enums"
           ]
         ]
       }
